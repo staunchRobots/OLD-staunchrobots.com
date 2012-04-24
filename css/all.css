@@ -1,0 +1,229 @@
+body{
+	margin:0;
+	background:#e3e4e6;
+	font:14px/18px Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+img{border-style:none;}
+a{
+	text-decoration:none;
+	color:#000;
+}
+a:hover{text-decoration:underline;}
+#wrapper{
+	min-width:1003px;
+	margin:0 auto;
+}
+#header{
+	min-height:171px;
+	width:970px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:19px 0 0;
+}
+#header .logo {
+	float:left;
+	background:url(../images/logo.png) no-repeat;
+	width:450px;
+	height:152px;
+	text-indent:-9999px;
+	overflow:hidden;
+	margin-right:16px;
+}
+#header .logo a {
+	display:block;
+	height:100%;
+}
+#header .item{
+	float:left;
+	background:url(../images/bg-item.gif) no-repeat;
+	width:38px;
+	height:43px;
+	margin-top:55px;
+}
+#nav{
+	background:url(../images/bg-nav.gif) no-repeat;
+	height:61px;
+	padding: 17px 0 0 28px;
+	width: 424px;	margin:46px 0 0;	list-style:none;
+	float:right;
+	font-size:20px;
+	line-height:24px;
+	font-weight:bold;
+	color:#4e4e52;
+}
+#nav li{
+	float:left;
+	padding-left:19px
+}
+#nav li:first-child{padding:0;}
+#nav a{
+	color:#4e4e52;
+}
+.title{
+	background:#8da2ab url(../images/bg-title.gif) repeat-x;
+	min-height:80px;
+}
+.title-holder{
+	padding: 18px 3px 0 7px;
+	width: 960px;
+	margin:0 auto;
+	text-align:center;
+}
+.title-holder h1{
+	margin:0;
+	font-size:36px;
+	line-height:40px;
+	text-shadow: 0 1px 0 #79868c;
+	word-spacing:-2px;
+}
+.info{
+	border-top:1px solid #a9bec8;
+	background:url(../images/bg-info.gif);
+	min-height:163px;
+}
+.info-holder{
+	width:910px;
+	padding:26px 30px 34px;
+	margin:0 auto;
+	font-size:26px;
+	line-height:34px;
+	text-align:center;
+	text-shadow: 0 1px 0 #8a969b;
+	word-spacing: -2px;
+}
+.info-holder p{margin:0;}
+.box-button{
+	background:#161616 url(../images/bg-box-button.gif) repeat-x;
+	min-height:100px;
+}
+.box-button-holder{
+	width:769px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:20px 101px 0 100px;
+}
+.box-button .btn-technology{
+	font-size:30px;
+	line-height:36px;
+	color:#fff;
+	font-weight:bold;
+	height:61px;
+	text-decoration:none;
+	float:left;
+	text-shadow: 0 1px 0 #7c888d;
+	padding-right:32px;
+	background:url(../images/sprite-technologies.gif) no-repeat 100% 0;
+}
+.box-button .btn-technology span{
+	background:url(../images/sprite-technologies.gif) no-repeat 0 -69px;
+	display:block;
+	padding: 11px 23px 15px 104px;
+}
+.box-button .btn-work{
+	font-size:30px;
+	line-height:36px;
+	color:#fff;
+	font-weight:bold;
+	height:61px;
+	text-decoration:none;
+	float:right;
+	text-shadow: 0 1px 0 #7c888d;
+	padding-right:29px;
+	background:url(../images/sprite-work.gif) no-repeat 100% 0;
+}
+.box-button .btn-work span{
+	background:url(../images/sprite-work.gif) no-repeat 0 -69px;
+	display:block;
+	padding: 11px 55px 15px 133px;
+	word-spacing: -3px;
+	white-space:nowrap;
+}
+.visual{
+	background:url(../images/img-01.jpg) no-repeat 50% 0;
+	min-height:389px;
+}
+.visual-holder{
+	width:970px;
+	margin:0 auto;
+}
+.visual-holder:after{
+	content:'';	display:block;	clear:both;
+}
+.visual .box{
+	background:url(../images/sprite-box.png) no-repeat;
+	width: 350px;
+	padding-top: 10px;
+	margin: -10px 10px 0 0;
+	float:right;
+}
+.visual .box-holder{
+	background:url(../images/sprite-box.png) no-repeat -711px 100%;
+	width: 350px;
+	padding-bottom: 42px;
+	overflow:hidden;
+}
+.visual .box-frame{
+	background:url(../images/sprite-box.png) repeat-y -354px 0;
+	overflow:hidden;
+	padding: 0 26px 0 34px;
+	text-align:center;
+	color:#fefefe;
+}
+.visual .box h2{
+	margin: 0 -16px 24px -24px;
+	font-size:26px;
+	line-height:29px;
+	background:#212122;
+	padding: 15px 0 16px;
+}
+.visual .box p{
+	margin:0 0 23px;
+	font-size:20px;
+	line-height:26px;
+	text-shadow: 0 1px 0 #222223;
+}
+#footer{
+	background:#e3e4e6 url(../images/bg-footer.gif) repeat-x;
+	min-height:133px;
+}
+#footer .address-box{
+	padding: 31px 5px 69px 10px;
+	width: 955px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#footer .address-box address{
+	font-style:normal;
+	float:left;
+	margin-left:144px;
+	font-size:18px;
+	line-height:21px;
+}
+#footer .address-box address:first-child{margin:0;}
+#footer .address-box address span{
+	display:block;
+}
+#footer .address-box address strong{
+	color:#9da9ae;
+	text-transform:uppercase;
+	font-size:14px;
+	line-height:18px;
+	display:block;
+	padding-bottom:10px;
+}
+#footer .address-box .mail{
+	color:#fff;
+	text-decoration:none;
+}
+#footer .address-box .mail:hover{text-decoration:underline;}
+.footer-holder{
+	width:970px;
+	margin:0 auto;
+	text-align:center;
+	padding-bottom:40px;
+}
+.footer-holder .copy{
+	color:#9da9ae;
+	text-transform:uppercase;
+}
