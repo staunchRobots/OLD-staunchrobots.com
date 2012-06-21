@@ -1,10 +1,19 @@
-
-
+img, form, fieldset{border:none;}
+form, fieldset{
+	margin:0;
+	padding:0;
+}
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, p{margin:0;}
+table{width:100%; border-collapse:collapse;}
+q{quotes: none;}
+q:before{content:"";}
+q:after{content:"";}
+input:focus { outline: none; }
+textarea:focus { outline: none; }
+select:focus { outline: none; }
 body{
-  margin:0;
-  font-family:"ff-din-web-1";
+  font-family: "ff-din-web-1","ff-din-web-2",sans-serif;
   background:#e3e4e6;
-  /* font:13px/16px  Arial, Helvetica, sans-serif; */
   color:#fff;
 }
 img{border-style:none;}
@@ -22,7 +31,7 @@ a:hover{text-decoration:underline;}
   width:970px;
   margin:0 auto;
   overflow:hidden;
-  padding:19px 0 0;
+/*  padding:19px 0 0;*/
 }
 #header .logo {
   float:left;
@@ -65,7 +74,7 @@ a:hover{text-decoration:underline;}
 #nav a{
   color:#0c0c0c;
 }
-#nav a:hover{
+#nav a:hover, #nav li.active a{
 	text-decoration:none;
 	border-bottom:9px solid #80090b;
 }
@@ -214,8 +223,6 @@ a:hover{text-decoration:underline;}
 	margin:0 auto 17px;
 	line-height:25px;
 }
-
-
 /*Team Page*/
 #main{
 	width:100%;
@@ -224,6 +231,7 @@ a:hover{text-decoration:underline;}
 .content-wrapper{
 	width:970px;
 	margin:0 auto;
+	clear:both;
 }
 #main #intro{
 	width:100%;
@@ -254,13 +262,13 @@ a:hover{text-decoration:underline;}
 .content-title{
 	width:100%;
 	background:url(../images/content-title.gif) repeat-x;
-	float:left;
 }
 .content-title h2{
 	color:#fff;
 	font-size:40px;
 	line-height:normal;
-	margin:26px 0;
+	padding:26px 0;
+	margin:0;
 }
 .content-holder{
 	background:url(../images/content-holder.png) no-repeat 100% 100%;
@@ -299,13 +307,13 @@ a:hover{text-decoration:underline;}
 	font-size:15px;
 	color:#212122;
 }
-#content #team .info a.email-link{
+a.email-link{
 	background:url(../images/email.jpg) no-repeat;
 	float:left;
 	padding:0 0 0 40px;
 	line-height:22px;
 }
-#content #team .info a.twitter-link{
+a.twitter-link{
 	float:right;
 	padding:0 0 0 30px;
 	background:url(../images/twitter.jpg) no-repeat;
@@ -432,4 +440,250 @@ a:hover{text-decoration:underline;}
 .footer-holder .copy{
   color:#9da9ae;
   text-transform:uppercase;
+}
+/*add css styles*/
+.team #content #team h3{
+	margin:0 0 40px;
+	font-size:30px;
+	line-height:32px;
+}
+.team .text{
+	float:right;
+	width:385px;
+}
+.team #content #team .team-box .photo-placer{
+	margin:0;
+	padding:75px 0 0;
+}
+.team #content #team .team-box p{
+	margin:0;
+	padding:0 0 35px;
+	font-size:18px;
+	line-height:26px;
+}
+.meta{
+	width:100%;
+	overflow:hidden;
+	margin:0;
+	padding:44px 0 0;
+	list-style:none;
+}
+.meta li{
+	float:left;
+	height:28px;
+	padding:0 0 0 57px;
+}
+.meta li:first-child{padding:0;}
+.meta li a{
+	float:left;
+	height:28px;
+	line-height:28px;
+}
+.meta li a.email_ico{
+	background:url(../images/email_ico.png) no-repeat 0 70%;
+	padding:0 0 0 48px;
+}
+.meta li a.twitter_ico{
+	background:url(../images/twitter_ico.png) no-repeat 0 50%;
+	padding:0 0 0 51px;
+}
+.meta li a.github_ico{
+	background:url(../images/github_ico.png) no-repeat 0 50%;
+	padding:0 0 0 41px;
+}
+.team #content #team{overflow:visible;}
+.team #content #team .team-box{
+	box-shadow: 0 0 6px #777;
+	-moz-box-shadow:0 0 6px #777;
+	-webkit-box-shadow:0 0 6px #777;
+	padding:25px 22px;
+}
+.inner #sidebar{
+	padding:17px 15px 0;
+	width:291px;
+}
+.inner #sidebar h4{margin:0 0 27px -17px;}
+.widgets{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.widgets li{
+	background:url(../images/ruby.png) no-repeat 0 3px;
+	padding:0 10px 70px 38px;
+	font-size:18px;
+	line-height:26px;
+}
+.photos_widget{
+	margin:0 auto;
+	width:270px;
+	overflow:hidden;
+	padding:0;
+	list-style:none;
+}
+.photos_widget li{
+	width:270px;
+	overflow:hidden;
+	padding:0 0 35px;
+}
+.photos_widget li img{display:block;}
+.inner #header{height:199px;}
+.inner #header .logo{
+	background:url(../images/inner_logo.png) no-repeat;
+	margin:11px 16px 0 0;
+}
+.main_box{
+	padding:55px 0 0;
+	width:100%;
+}
+.main_box:after, .technology:after{
+	height: 0;
+	clear: both;
+	content: "";
+	display: block;
+}
+.technology{
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.technology li{
+	float:left;
+	width:290px;
+	min-height:288px;
+	padding:6px 10px;
+	background:#fff;
+	box-shadow: 0 0 6px #777;
+	-moz-box-shadow:0 0 6px #777;
+	-webkit-box-shadow:0 0 6px #777;
+	margin:0 0 72px 19px;
+}
+.technology li:first-child{margin-left:0;}
+.technology_logo{
+	width:100%;
+	padding:0 0 10px;
+}
+.technology_logo img{
+	display:block;
+	margin:0 auto;
+}
+.technology li p{
+	font-size:18px;
+	line-height:26px;
+	color:#4c616a;
+	margin:0 0 15px;
+}
+.job_widget ul.widgets li{
+	 padding: 0 0 20px 38px;
+	 font-size:24px;
+	 line-height:26px;
+}
+#sidebar .info_box p{
+	font-size:18px;
+	line-height:24px;
+	text-align:center;
+	padding:0 0 20px;
+	margin:0;
+}
+.main_bg{background:url(../images/main_bg.jpg) no-repeat 50% 0;}
+.info_box p a{color:#fff;}
+.job_title{
+	width:100%;
+	min-height:606px;
+	padding:68px 0 0;
+}
+.job_title h1{
+	text-align:center;
+	line-height:1.2em;
+	text-transform:uppercase;
+	font-size:54px;
+	font-weight:normal;
+}
+.job_content{
+	width:100%;
+	padding:50px 0 40px;
+}
+.job_content h3{
+	font-size:30px;
+	font-weight:normal;
+	line-height:36px;
+	color:#4c616a;
+	text-align:center;
+	padding:0 30px;
+}
+.inner .content-title h2{
+	font-size:50px;
+	line-height:100px;
+	padding:0;
+	height:100px;
+	overflow:hidden;
+}
+.work_wrap{
+	width:100%;
+	padding:0 0 50px;
+}
+.work_wrap:after {
+	height: 0;
+	clear: both;
+	content: "";
+	display: block;
+}
+.work_box{
+	width:412px;
+	height:480px;
+	padding:24px 24px 0;
+	margin:0 0 0 25px;
+	float:left;
+	background:#fff;
+	box-shadow: 0 0 6px #777;
+	-moz-box-shadow:0 0 6px #777;
+	-webkit-box-shadow:0 0 6px #777;
+	color:#4c616a;
+	overflow:hidden;
+}
+.first_work_box{margin-left:0;}
+.work_title{
+	width:100%;
+	overflow:hidden;
+}
+.work_title h3{
+	float:left;
+	font-size:30px;
+	line-height:1.2em;
+	font-weight:normal;
+}
+.work_title a{
+	float:right;
+	padding:17px 0 0;
+	font-size:14px;
+	color:#4c616a;
+}
+.gallery{
+	width:100%;
+	position:relative;
+	overflow:hidden;
+}
+.gallery ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:100%;
+	height:370px;
+	overflow:hidden;
+}
+.gallery ul li{
+	float:left;
+	height:370px;
+	width:412px;
+	overflow:hidden;
+}
+.gallery ul li img{
+	display:block;
+	margin:0 0 10px;
+}
+.gallery ul li p{
+	font-size:18px;
+	line-height:24px;
+	padding:0 5px;
 }
