@@ -1,0 +1,41 @@
+= haml :head
+#main
+  .content-title
+    .content-wrapper
+      %h2 Internships and Jobs
+  .content-wrapper
+    .content-holder
+      .content-frame
+        #content
+          #team.jobs2
+            .team-box
+              .photo-placer
+                / <img src="images/img-03.jpg" alt="" />
+              .text
+                %h3 Ruby on Rails developer
+                %p Must be awesome code ninja. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                %p Required skills: Ruby on Rails, database, bla, bla
+            .team-box
+              .photo-placer
+                / <img src="images/img-03.jpg" alt="" />
+              .text
+                %h3 Front-end developer
+                %p Must be awesome code ninja Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                %p Required skills: html5 , css, bla, bla
+        #sidebar
+          .job_widget
+            %ul.widgets
+              %li Learn Ruby on Rails
+              %li Seeking passionate developers
+              %li Work in an American Startup Culture
+              %li Learn Ruby on Rails
+              %li Seeking passionate developers
+              %li Work in an American Startup Culture
+          .info_box
+            %h4 More Information
+            %p You will work under our supervision on opensource projects learning cutting edge best practices, until you are capable for real world client work, at which point you would graduate from intern to full team member!
+            %p
+              Please send an email to
+              %a{:href => "mailto:jobs@staunchrobots.com"} jobs@staunchrobots.com
+              and tell us a little bit about yourself. Let us know what web experience you have and why you want to learn Ruby on Rails!
+= haml :footer

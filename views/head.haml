@@ -1,0 +1,28 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title StaunchRobots
+    %link{:href => "/css/style.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "http://use.typekit.com/cyd0urf.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load();}catch(e){}  %body
+    #wrapper
+      #header
+        %strong.logo
+          %a{:href => "/"} StaunchRobots
+        %strong.item &nbsp;
+        %ul#nav
+          %li
+            %a{:href => "team"} about
+          %li
+            %a{:href => "technology"} technology
+          %li
+            %a{:href => "work"} work
+          %li
+            %a{:href => "jobs"} jobs
+          %li
+            %a{:href => "learn"} learn
+        %address.primary
+          %a{:href => "mailto:inquiry@staunchrobots.com"} Contact Us
+          %a.phone{:href => "#"} 443-494-9228

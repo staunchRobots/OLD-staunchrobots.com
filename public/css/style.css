@@ -338,7 +338,7 @@ a.twitter-link{
   font-size:26px;
   line-height:19px;
   font-weight:normal;
-  margin:4px 0 0;
+  margin:4px 0 15px 0;
 }
 
 #content #team.jobs2 h3{
@@ -670,7 +670,7 @@ a.twitter-link{
   box-shadow: 0 0 6px #777;
   -moz-box-shadow:0 0 6px #777;
   -webkit-box-shadow:0 0 6px #777;
-  color:#4c616a;
+  color:#212122;
   overflow:hidden;
 }
 .first_work_box{margin-left:0;}
