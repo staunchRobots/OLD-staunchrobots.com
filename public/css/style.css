@@ -338,7 +338,7 @@ a.twitter-link{
   font-size:26px;
   line-height:19px;
   font-weight:normal;
-  margin:4px 0 15px 0;
+  margin:4px 0 10px 0;
 }
 
 #content #team.jobs2 h3{
@@ -350,7 +350,7 @@ a.twitter-link{
 }
 
 #content #team.jobs2 p{
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
 }
 
 #content #team .team-box p{
@@ -540,7 +540,7 @@ a.twitter-link{
 }
 .widgets li{
   background:url(../images/ruby.png) no-repeat 0 3px;
-  padding:0 10px 70px 38px;
+  padding:0 10px 30px 38px;
   font-size:18px;
   line-height:26px;
 }
@@ -755,7 +755,7 @@ ul.learn-info {
   list-style: none;
 }
 ul.learn-info li{
-  height: 65px;
+  height: 80px;
   width: 133px;
   padding: 14px 0 0 14px;
   float: left;
