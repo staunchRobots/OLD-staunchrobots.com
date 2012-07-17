@@ -10,52 +10,57 @@
           #team
             .team-box
               .about
-                %h3 What we do:
-                %h3 We create top quality code
-                %p We recruit inpired local talent, and put them through a grueling best pracices training program, where we drill in best OOP techniques inspired by http://objectsonrails.com/. The result is a standardized way of doing things, that tend to be elegant, readable, and maintaible. 
-                %h3 We value Communication
-                %p We value clear communication equal to code quality. Programmers communicate directly with clients. We believe that a client should never have to ask what we are working on, because we should tell them before they ask. We also love quality time reports! Time Reports Guidelines Doc Link
-                %h3 We love programming
-                %p Its a cultural norm at our company to spend free time watching railscasts and reading technical blogs. ALl staunch programmers are passionate about programming, its not just a dayjob.
-                %h3 Team Dynamics
-                %p We believe that the key to serious productivity is great group dynamics. We work on projects as a team with different team members expecting daily deliverables, that the client can comprehend.  We read each other's code and create code that we are proud of being read.
+                / %h3 What we do:
+                %h3 Top coders making quality code
+                %p 
+                  We recruit inspired local talent, and put them through a grueling best practices training program, where we drill in best OOP techniques inspired by 
+                  %a(href="http://objectsonrails.com/") http://objectsonrails.com/
+                  \. The result is a standardized way of doing things, that tend to be elegant, readable, and maintainable. We believe the key to quality code is a quality developer, and only hire people passionate about and enjoy learning. 
+                %h3 We value communication and group dynamics
+                %p Developers are available and online during eastern standard time and work closely with our clients to get quick feedback.  Clients know what we are doing, and what we are going to do next. 
+            
+                
                 %h3 Over 75% of revenue flows to developers.
-                %p We are very proud of our financial leanness. Over 75% of all company revenue goes to developers. We have virtually no sales, management, or administrative costs. Our programmers are expected to lead, and communicate profiently and directly. We pay the most amount of money we can to developers in order to attract and value the highest level of talent. We believe that in doing so, we dont need to add additional babysitting layers of management, and that in the end less people in the telephone game and higher productivity.
+                %p We are very proud of our financial leanness. Over 75% of all company revenue goes to developers. We have virtually no sales, management, or administrative costs. Our programmers are expected to lead, and communicate proficiently and directly. We pay the most amount of money we can to developers in order to attract and value the highest level of talent. Less layers of management,  means less people in the telephone game, and better efficiency.
+                
+                %h3 Medellin, Colombia ?!
+                %p We are headquartedred in paradise, Medellin Colombia. Why? Because the weather is perfect, the vista's are amazing, the price is cheap, the women are beautiful and we are on our client's time zone! I mean look at the view from our office:
+                %img(src="images/colombia.jpg")
                 %br
-                %h3 Meet The Team...
+            
+            .meet-team Meet The Team...
             .team-box
               .photo-placer
-                %img{:alt => "", :src => "images/img-03.jpg"}/
+                %img{:height => 192, :alt => "", :src => "images/todd_3.jpg"}/
               .text
                 %h3 Todd Morrill
-                %p Todd is the presidente of staunchrobots.com. Not has a degree in computer science and is a self professed not very good programmer, and only hires people that he considers substantially better than himself. Todd's major value in the company is moderating all client facing communications, and giving feedback to developers about how to communicate better. He believes that communication is as important as code quality, and holds all member's accountable to communication standards. 
-                
-              %ul.meta
+                %p Todd is a cofounder of staunchrobots. He recruits talent globally, talking to developers from around the world and selling them on how they would be better off moving to Colombia.  Todd also moderates all communications both between team members and clients and drills in the message that communication is as important as coding skills.
+              %ul.meta  
                 %li
-                  %a.email_ico{:href => "#"} email@staunchrobots.com
+                  %a.email_ico{:href => "mailto:#{obscure_email("todd.morrill@staunchrobots.com")}"} email me
                 %li
-                  %a.twitter_ico{:href => "#"} twittername
+                  %a.twitter_ico{:href => "http://twitter.com/morrillt"} @morrillt
                 %li
-                  %a.github_ico{:href => "#"} github link
+                  %a.github_ico{:href => "http://github.com/morrillt"} github
             .team-box
               .photo-placer
                 %img{:alt => "", :src => "images/voffka.jpg", :height => '192', :width => '192'}/
               .text
                 %h3 Vladimir Penkin
-                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus. Maecenas vitae enim a eros elementum tincidunt et quis ipsum. Nullam porta lacus aliquam mauris mattis in vestibulum neque volutpat. Etiam euismod iaculis mi vitae elementum.
+                %p Vladimir is a technical lead in the company. He is responsible for setting company quality standards and increasing them constantly. He is constantly targeting for the best practices and approaches. He balances OOP and functional approaches to achieve best results. Vladimir is passionate about pushing himself and all of us to makes code more readable, testable and maintainable.
               %ul.meta
                 %li
                   %a.email_ico{:href => "mailto:penkinv@gmail.com"} penkinv@gmail.com
                 %li
-                  %a.twitter_ico{:href => "https://twitter.com/#!/mindwork"} mindwork
+                  %a.twitter_ico{:href => "https://twitter.com/#!/mindwork"} @mindwork
                 %li
-                  %a.github_ico{:href => "https://github.com/shell"} GitHub
+                  %a.github_ico{:href => "https://github.com/shell"} GitHub(:shell)
             .team-box
               .photo-placer
-                %img{:alt => "", :src => "images/img-03.jpg"}/
+                %img{:height => 192, :alt => "", :src => "images/castillo.jpg"}/
               .text
                 %h3 Sebastian Castillo
-                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus. Maecenas vitae enim a eros elementum tincidunt et quis ipsum. Nullam porta lacus aliquam mauris mattis in vestibulum neque volutpat. Etiam euismod iaculis mi vitae elementum.
+                %p Sebastian is staunchrobot's first colombian native team member. He is the founder of a local technology meetup initiative called coffeegrid. In his freetime sebastian enjoys promoting the benefits of emacs.
               %ul.meta
                 %li
                   %a.email_ico{:href => "#"} email@staunchrobots.com
@@ -65,10 +70,10 @@
                   %a.github_ico{:href => "#"} github link
             .team-box
               .photo-placer
-                %img{:alt => "", :src => "images/img-03.jpg"}/
+                %img{:alt => "", :height => 192, :width => 192, :src => "images/could_be_you.jpg"}/
               .text
                 %h3 This could be you!
-                %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus. Maecenas vitae enim a eros elementum tincidunt et quis ipsum. Nullam porta lacus aliquam mauris mattis in vestibulum neque volutpat. Etiam euismod iaculis mi vitae elementum.
+                %p If you love programming, and are open to coming to Colombia, check out our Jobs page!
               %ul.meta
                 %li
                   %a.email_ico{:href => "#"} email@staunchrobots.com
@@ -77,12 +82,12 @@
                 %li
                   %a.github_ico{:href => "#"} github link
         #sidebar
-          .projects
-            %h4 Community Projects
-            %ul.widgets
-              %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus.
-              %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus.
-              %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus.
+          / .projects
+          /   %h4 Community Projects
+          /   %ul.widgets
+          /     %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus.
+          /     %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus.
+          /     %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus.
           .projects
             %h4 Photos
             %ul.photos_widget
