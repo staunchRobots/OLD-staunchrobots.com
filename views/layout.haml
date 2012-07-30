@@ -33,3 +33,39 @@
         %address.primary
           %a{:href => "mailto:inquiry@staunchrobots.com"} Contact Us
           %a.phone{:href => "#"} 443-494-9228
+
+      = yield
+
+      #footer
+        .address-box
+          %address
+            %span
+              %strong US address
+            %span Col 28020 Suite 120
+            %span P.O. Box 025720
+            %span Miami FL. 33172-3652
+          %address
+            %span
+              %strong Colombian address
+            %span Address: 26sur 43a 41
+            %span Suite 1052
+            %span Envigado, Colombia
+          %address
+            %span
+              %strong Contact Info
+            %span
+              %a.mail{:href => "mailto:inquiry@staunchRobots.com"} inquiry@staunchRobots.com
+            %span 443-494-9228
+            %span @staunchrobots
+        .footer-holder
+          %strong.copy &copy; 2012 StaunchRobots. All Rights Reserved.
+        :javascript
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-32956013-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();

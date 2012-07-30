@@ -1,50 +1,14 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title StaunchRobots
-    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
-    %script{:src => "/javascripts/jquery_1_7_2.js", :type => "text/javascript"}
-    %script{:src => "/javascripts/jquery.anythingslider.js", :type => "text/javascript"}
-    %script{:src => "/javascripts/scripts.js", :type => "text/javascript"}
-    %script{:src => "http://use.typekit.com/cyd0urf.js", :type => "text/javascript"}
-    :javascript
-      try{Typekit.load();}catch(e){}
-    %link{:href => "/css/style.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/css/anythingslider.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
-  %body
-    #wrapper
-      #header
-        %strong.logo
-          %a{:href => "/"} StaunchRobots
-        %strong.item &nbsp;
-        %ul#nav
-          %li
-            %a{:href => "team"} about
-          / %li
-          /   %a{:href => "technology"} technology
-          %li
-            %a{:href => "work"} work
-          %li
-            %a{:href => "jobs"} jobs
-          %li
-            %a{:href => "learn"} learn
-          %li
-            %a{:href => "http://blog.staunchrobots.com"} blog
-        %address.primary
-          %a{:href => "mailto:#{obscure_email("inquiry@staunchrobots.com")}"} Contact Us
-          %a.phone{:href => "#"} 443-494-9228
-      .box-button
-        .box-button-holder
-          %a.btn-technology{:href => "technology"}
-            %span Technologies
-          %a.btn-work{:href => "work"}
-            %span Our Work
-      .visual
-        .visual-holder
-          .box
-            .box-holder
-              .box-frame
-                %h2 About Us
-                %p We are a boutique agency of developers working reliable consistent eastern standard hours. We are passionate about clean code, and strictly adhere to best practices of the ruby way.
-                %a{:href => "team"} Learn more
-    = haml :footer
+.box-button
+  .box-button-holder
+    %a.btn-technology{:href => "technology"}
+      %span Technologies
+    %a.btn-work{:href => "work"}
+      %span Our Work
+.visual
+  .visual-holder
+    .box
+      .box-holder
+        .box-frame
+          %h2 About Us
+          %p We are a boutique agency of developers working reliable consistent eastern standard hours. We are passionate about clean code, and strictly adhere to best practices of the ruby way.
+          %a{:href => "team"} Learn more
