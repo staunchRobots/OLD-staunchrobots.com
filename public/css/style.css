@@ -64,7 +64,7 @@ p {
   margin:56px 0 0;
   list-style:none;
   float:right;
-  font-size:18px;
+  font-size:19px;
   line-height:24px;
   color:#0c0c0c;
   text-transform:uppercase;
@@ -74,7 +74,7 @@ p {
   padding-left:17px
 }
 #nav li:first-child{
-  padding:0 0 0 20px;
+  padding:0 0 0 25px;
 }
 #nav a{
   color:#0c0c0c;
