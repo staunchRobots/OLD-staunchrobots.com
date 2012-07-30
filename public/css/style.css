@@ -64,7 +64,7 @@ p {
   margin:56px 0 0;
   list-style:none;
   float:right;
-  font-size:16px;
+  font-size:18px;
   line-height:24px;
   color:#0c0c0c;
   text-transform:uppercase;
@@ -74,7 +74,7 @@ p {
   padding-left:17px
 }
 #nav li:first-child{
-  padding:0 0 0 10px;
+  padding:0 0 0 20px;
 }
 #nav a{
   color:#0c0c0c;
@@ -184,7 +184,7 @@ p {
   clear:both;
 }
 .visual .box{
-  background:url(../images/sprite-box.png) no-repeat;
+/*  background:url(../images/sprite-box.png) no-repeat;*/
   width: 350px;
   padding-top: 39px;
   margin: -8px 10px 0 0;
@@ -204,7 +204,7 @@ p {
   color:#fefefe;
 }
 .visual .box h2{
-  margin: -32px -16px 24px -24px;
+  margin: -32px -26px 24px -34px;
   font-size:26px;
   line-height:29px;
   background:#212122;
@@ -365,7 +365,7 @@ a.twitter-link{
   font-size: 24px;
 /*  float: right;*/
   padding-left: 450px;
-  
+
 }
 
 #content #team .team-box .photo-placer{
@@ -568,8 +568,15 @@ a.twitter-link{
   width:270px;
   overflow:hidden;
   padding:0 0 35px;
+
 }
-.photos_widget li img{display:block;}
+.photos_widget li img{
+  display:block;
+  -moz-box-shadow: 0 0 10px #444;
+  -webkit-box-shadow: 0 0 10px #444;
+  box-shadow: 0 0 10px #444;
+
+  }
 .inner #header{height:199px;}
 .inner #header .logo{
   background:url(../images/inner_logo.png) no-repeat;
