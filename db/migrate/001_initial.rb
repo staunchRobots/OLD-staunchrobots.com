@@ -20,5 +20,6 @@ class Initial < ActiveRecord::Migration
   def self.down
     drop_table :categories
     drop_table :products
+    drop_table :applicants
   end
 end
