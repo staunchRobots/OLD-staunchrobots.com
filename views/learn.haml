@@ -13,6 +13,26 @@
                 %ul.learn-info
                   %li
                     %strong When
+                    .text Oct 30, 2012
+                    .text 6:00pm-9:00pm
+                  %li
+                    %strong Where
+                    .text Room 12094
+                    .text EATFIT, Medellin
+                %h3 Coding Dojo
+                .price
+                %p We are hosting medellin coding dojo. It helps you to polish your current skills and obtain new ones!
+                %p Leave your email and we will shoot you email about upcoming events
+                %form(action='/apply_for_dojo' method="POST")
+                  %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
+                  %p.error= @flash
+                  %input.btn.red(type='submit') Submit
+            .team-box
+              .photo-placer
+              .text
+                %ul.learn-info
+                  %li
+                    %strong When
                     .text Oct 21-22, 2012
                     .text 5:00pm-8:00pm
                   %li

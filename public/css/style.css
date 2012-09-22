@@ -773,6 +773,10 @@ address.primary a {
   background-color: #AE1F23;
 }
 
+.error {
+  color: red;
+}
+
 ul.learn-info {
   float: right;
   margin: 0;
@@ -803,4 +807,10 @@ ul.learn-info li div.text {
 .price {
   padding: 5px 0;
   color: #777;
+}
+.text_field {
+  font-size: 1.5em;
+/*  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;*/
 }

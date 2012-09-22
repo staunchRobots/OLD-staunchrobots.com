@@ -1,6 +1,6 @@
 require "sinatra"
 require "sinatra/reloader"
-# require "sinatra/activerecord"
+require "sinatra/activerecord"
 require "sinatra/base"
 # require "active_record"
 require "uri"
@@ -31,4 +31,21 @@ PER_PAGE = 6
       haml page
     end
   end
-  
+
+  post "/apply_for_dojo" do
+    @email = params[:applicant_email]
+    @kohai = Applicant.new(:email => @email)
+    if @kohai.save
+      @flash = "We got you! You will be notified about new upcoming Dojo events"
+    else
+      @flash = "Correct following errors: #{@kohai.errors.full_messages.join(', ')}"
+    end
+    haml :learn
+  end
+
+  get '/hack' do
+    protected!
+    @applicants = Applicant.all
+    haml :hack
+  end
+

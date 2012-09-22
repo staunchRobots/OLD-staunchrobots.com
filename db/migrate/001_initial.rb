@@ -11,6 +11,10 @@ class Initial < ActiveRecord::Migration
     create_table :categories do |t|
       t.string :name
     end
+
+    create_table :applicants do |t|
+      t.string :email
+    end
   end
 
   def self.down

@@ -1,0 +1,28 @@
+#main
+  .content-title
+    .content-wrapper
+      %h2 About Us
+  .content-wrapper
+    .content-holder
+      .content-frame
+        #content
+          #team
+            .team-box
+              .about
+                %h3 List of applicants
+                - @applicants.each do |a|
+                  %p= a.email
+        #sidebar
+          .projects
+            %h4 Photos
+            %ul.photos_widget
+              %li
+                %img{:alt => "", :src => "images/img-4.jpg"}/
+              %li
+                %img{:alt => "", :src => "images/img-5.jpg"}/
+              %li
+                %img{:alt => "", :src => "images/img-6.jpg"}/
+              %li
+                %img{:alt => "", :src => "images/img-7.jpg"}/
+              %li
+                %img{:alt => "", :src => "images/office7.jpg"}/
