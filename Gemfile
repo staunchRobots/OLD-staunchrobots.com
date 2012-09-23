@@ -6,6 +6,10 @@ gem 'haml'
 gem 'activerecord', "3.0.9"
 gem 'sinatra-activerecord', :git => 'git@github.com:shell/sinatra-activerecord.git'
 gem "sinatra-reloader"
+gem 'shotgun'
+gem "github_api"
+gem "awesome_print"
+gem "sinatra-partial"
 
 gem 'sqlite3-ruby'
 gem 'mysql2', '< 0.3'

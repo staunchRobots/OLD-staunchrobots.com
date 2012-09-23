@@ -514,9 +514,14 @@ a.twitter-link{
 .meta li{
   float:left;
   height:28px;
-  padding:0 0 0 57px;
+  padding:0 0 0 30px;
 }
 .meta li:first-child{padding:0;}
+.meta li.right{
+/*  padding-left: 80px;*/
+  float: right;
+}
+
 .meta li a{
   float:left;
   height:28px;
@@ -813,4 +818,46 @@ ul.learn-info li div.text {
 /*  border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;*/
+}
+
+.commits {
+  list-style: none;
+  color: black;
+  padding: 0px
+}
+
+.commits li {
+  font-weight: bold;
+/*  display: none;*/
+  background-color: #e7f1f7;
+  border: 1px solid #c7d6df;
+  margin: 0 0 5px 0;
+  padding: 5px 10px 3px 10px;
+}
+.commits li a{
+  color: #4584cb;
+}
+.commits li .pull_request_body{
+
+}
+
+#content #team .team-box p.pull_request_body {
+  margin: 0 0 10px 0;
+}
+
+.right {
+  float: right;
+}
+
+.down_icon {
+  height: 15px;
+  width: 15px;
+  background:url(/images/downdown.png) no-repeat;
+}
+
+.meta .right img {
+  border: 0px;
+}
+.meta .right .commits_btn {
+  float: none;
 }

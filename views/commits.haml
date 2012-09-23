@@ -1,0 +1,15 @@
+%li
+  - if event.type == 'PullRequestEvent'
+    %a(href="https://github.com/#{event.actor.login}")= event.actor.login
+    opened pull request
+    %a(href="#{event.payload.pull_request.issue_url}")= "#{event.repo.name}##{event.payload.number}"
+    %p.pull_request_body
+      = succeed('...') do
+        = event.payload.pull_request.body[0..70]
+  - elsif event.type == "IssueCommentEvent"
+    %a(href="https://github.com/#{event.actor.login}")= event.actor.login
+    commented on issue
+    %a(href="#{event.payload.issue.html_url}/#issuecomment-#{event.payload.comment.id}")= "#{event.repo.name}##{event.payload.issue.number}"
+    %p.pull_request_body
+      = succeed('...') do
+        = event.payload.issue.body[0..70]

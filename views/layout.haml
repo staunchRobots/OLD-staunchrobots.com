@@ -9,6 +9,13 @@
     %script{:src => "http://use.typekit.com/cyd0urf.js", :type => "text/javascript"}
     :javascript
       try{Typekit.load();}catch(e){}
+      $(function() {
+      $(".commits_btn").click(function(e) {
+      $(this).parents('.team-box').find('.commits').toggle('fast');
+      e.preventDefault();
+      })
+      $('.commits').hide();
+      })
     %link{:href => "/css/style.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/css/anythingslider.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
   %body
