@@ -48,7 +48,7 @@ ActiveRecord::Base.logger.level = Logger::DEBUG
     @kohai = Applicant.new(:email => @email, :study => @study)
     @flash = {}
     if @kohai.save
-      @flash[@study] = "We got you! You will be notified about new upcoming Dojo events"
+      @flash[@study] = "We will be contacting your shortly regarding your interest to take this class!"
     else
       @flash[@study] = "Correct following errors: #{@kohai.errors.full_messages.join(', ')}"
     end
