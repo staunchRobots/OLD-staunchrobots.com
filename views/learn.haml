@@ -13,17 +13,18 @@
                 %ul.learn-info
                   %li
                     %strong When
-                    .text Oct 30, 2012
-                    .text 6:00pm-9:00pm
+                    .text TBA
+                    .text TBA
                   %li
                     %strong Where
-                    .text Room 12094
-                    .text EATFIT, Medellin
+                    .text
+                    .text
                 %h3 Coding Dojo
                 .price
                 %p We are hosting medellin coding dojo. It helps you to polish your current skills and obtain new ones!
                 %p Leave your email and we will shoot you email about upcoming events
                 %form(action='/apply_for_dojo' method="POST")
+                  %input.text_field(type='hidden'  name="applicant_study" value="dojo")
                   %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
                   %p.error= @flash
                   %input.btn.red(type='submit') Submit
@@ -33,83 +34,103 @@
                 %ul.learn-info
                   %li
                     %strong When
-                    .text Oct 21-22, 2012
-                    .text 5:00pm-8:00pm
+                    .text TBA
+                    .text TBA
                   %li
                     %strong Where
-                    .text Tinto Tintera
-                    .text Lleras park, Medellin
-                %h3 Medellin Rails Meetup
-                .price Medellin
-                %p We are hosting medellin ruby on rails group. Doing some presentations and talks about usage of ruby and our experiences.We are hosting medellin ruby on rails group. Doing some presentations and talks about usage of ruby and our experiences.
+                    .text Ruta N
+                    .text Medellin
+                %h3 Intro to Javascript
+                .price 150,000 cop Limit - 8 students
+                %p A 5 class weekly class.  Using javascript and html canvas, you will learn the fundamentals of programming in a visual, interactive way!  By the end, you'll have a simple but playable game and have basic knowledge of two modern technologies.
+                %p Best of all, the entire course will take place in your browser:  no special tools needed!
+                %p Audience: No previous programming experience required, designed for people looking to get started.
+                %p Instructor: Jeffrey Biles, Class will be in ENGLISH
                 %p
-                  %a.btn.red{:href => "#"} Read more
+                  %i Scholarships Available!  Email us at
+                  %a(href="scholarship@staunchrobots.com")scholarship@staunchrobots.com
+                  %i with a summary of your circumstances.
+                %form(action='/apply_for_dojo' method="POST")
+                  %input.text_field(type='hidden'  name="applicant_study" value="intro_javascript")
+                  %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
+                  %p.error= @flash
+                  %input.btn.red(type='submit') Submit
             .team-box
               .photo-placer
               .text
                 %ul.learn-info
                   %li
                     %strong When
-                    .text Oct 21-22, 2012
-                    .text 5:00pm-8:00pm
+                    .text TBA
+                    .text TBA
                   %li
                     %strong Where
-                    .text Tinto Tintera
-                    .text Lleras park, Medellin
-                %h3 Introduction to ruby
-                .price Medellin $100
-                %p Must be awesome code ninja Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .text Ruta N
+                    .text Medellin
+                %h3 Build a game with Coffescript
+                .price 250,000 cop
+                %p A 12 class weekly class for beginning programmers that want to push themselves to the next level. We will dive into more advanced object-oriented techniques and learn several modern development tools.  By the end you’ll have created an online demo that is unique, impressive, and a monument to your newly learned skills.
+                %p Audience: Basic Programming experience, no javascript experience required.
+                %p Instructor: Jeffrey Biles, Class will be in ENGLISH
                 %p
-                  %a.btn.red{:href => "#"} Read more
+                  %i Scholarships Available!  Email us at
+                  %a(href="scholarship@staunchrobots.com")scholarship@staunchrobots.com
+                  %i with a summary of your circumstances.
+                %form(action='/apply_for_dojo' method="POST")
+                  %input.text_field(type='hidden'  name="applicant_study" value="game_with_coffeescript")
+                  %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
+                  %p.error= @flash
+                  %input.btn.red(type='submit') Submit
             .team-box
               .photo-placer
               .text
                 %ul.learn-info
                   %li
                     %strong When
-                    .text Oct 21-22, 2012
-                    .text 5:00pm-8:00pm
+                    .text TBA
+                    .text
                   %li
                     %strong Where
-                    .text Tinto Tintera
-                    .text Lleras park, Medellin
-                %h3 Introduction to ruby
-                .price Bogota $200
-                %p Must be awesome code ninja Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .text Ruta N
+                    .text Medellin
+                %h3 TDD with Ruby on Rails
+                .price 250,000 cop
+                %p A 10 week class to get you guys started in rails! We will get together and build something interesting together, teaching you along the way. This class is for people who know how to self learn. We would like for you to complete this tutorial before applying http://ruby.railstutorial.org/. This way we should be able to skip past some of the  basics.
+                %p Audience: Self learners, who have a little MVC Experience. Feel free to email us if you arent sure!
+                %p Instructor: StaunchRobots Team, Class will be in ENGLISH
                 %p
-                  %a.btn.red{:href => "#"} Read more
+                  %i Scholarships Available!  Email us at
+                  %a(href="scholarship@staunchrobots.com")scholarship@staunchrobots.com
+                  %i with a summary of your circumstances.
+                %form(action='/apply_for_dojo' method="POST")
+                  %input.text_field(type='hidden'  name="applicant_study" value="tdd_with_rails")
+                  %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
+                  %p.error= @flash
+                  %input.btn.red(type='submit') Submit
             .team-box
               .photo-placer
               .text
                 %ul.learn-info
                   %li
                     %strong When
-                    .text Oct 21-22, 2012
-                    .text 5:00pm-8:00pm
+                    .text Every saturday
+                    .text 2:00pm-5:00pm
                   %li
                     %strong Where
-                    .text Tinto Tintera
+                    .text
                     .text Lleras park, Medellin
-                %h3 Advanced Javascript
-                .price Medellin Free
-                %p Must be awesome code ninja Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                %h3 Staunch Saturday
+                .price Free
+                %p The structure of this time, will vary between the following  options:
                 %p
-                  %a.btn.red{:href => "#"} Read more
-            .team-box
-              .photo-placer
-              .text
-                %ul.learn-info
-                  %li
-                    %strong When
-                    .text Oct 21-22, 2012
-                    .text 5:00pm-8:00pm
-                  %li
-                    %strong Where
-                    .text Tinto Tintera
-                    .text Lleras park, Medellin
-                %h3 Test-driven development
-                .price Medellin Free
-                %p Must be awesome code ninja Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  %b Coding Dojo
+                  \- We will do a coding dojo the first saturday of each month. Mentor will set up a kata for students to solve in different languages. This provides opportunities for people to learn from each other and get perspective on how to solve problems from different angles. Read More here - http://codingdojo.org/
+                %p
+                  %b Open Source Contributions
+                  \- 2nd saturday of each month. Mentors will work with group to facilitate meaningful contributions to open source and community needed initiatives.
+                %p
+                  %b Special Topics / Study Hall
+                  \- Mentors will provide a short slideshow of a special topic, then guide whoever shows up into doing exercises in that topic. Programmers might also use this time to get feedback / help on a problem they are facing from work or class.
                 %p
                   %a.btn.red{:href => "#"} Read more
         #sidebar

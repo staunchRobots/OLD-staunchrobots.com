@@ -43,7 +43,8 @@ ActiveRecord::Base.logger.level = Logger::DEBUG
 
   post "/apply_for_dojo" do
     @email = params[:applicant_email]
-    @kohai = Applicant.new(:email => @email)
+    @study = params[:study]
+    @kohai = Applicant.new(:email => @email, :study => study)
     if @kohai.save
       @flash = "We got you! You will be notified about new upcoming Dojo events"
     else
