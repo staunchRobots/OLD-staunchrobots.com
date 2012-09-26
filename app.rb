@@ -32,6 +32,7 @@ ActiveRecord::Base.logger.level = Logger::DEBUG
 
   [:index, :jobs, :learn, :"team-page", :technology, :work].each do |page|
     get "/#{page}*" do
+      @flash = {}
       haml page
     end
   end
@@ -45,7 +46,7 @@ ActiveRecord::Base.logger.level = Logger::DEBUG
     @email = params[:applicant_email]
     @study = params[:applicant_study]
     @kohai = Applicant.new(:email => @email, :study => @study)
-    @flash ||= {}
+    @flash = {}
     if @kohai.save
       @flash[@study] = "We got you! You will be notified about new upcoming Dojo events"
     else
