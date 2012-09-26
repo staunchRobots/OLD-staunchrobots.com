@@ -45,10 +45,11 @@ ActiveRecord::Base.logger.level = Logger::DEBUG
     @email = params[:applicant_email]
     @study = params[:applicant_study]
     @kohai = Applicant.new(:email => @email, :study => @study)
+    @flash ||= {}
     if @kohai.save
-      @flash = "We got you! You will be notified about new upcoming Dojo events"
+      @flash[@study] = "We got you! You will be notified about new upcoming Dojo events"
     else
-      @flash = "Correct following errors: #{@kohai.errors.full_messages.join(', ')}"
+      @flash[@study] = "Correct following errors: #{@kohai.errors.full_messages.join(', ')}"
     end
     haml :learn
   end

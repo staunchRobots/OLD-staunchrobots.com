@@ -32,7 +32,7 @@
                 %form(action='/apply_for_dojo' method="POST")
                   %input.text_field(type='hidden'  name="applicant_study" value="intro_javascript")
                   %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
-                  %p.error= @flash
+                  %p.error= @flash[intro_javascript]
                   %input.btn.red(type='submit') Submit
             .team-box
               .photo-placer
@@ -58,7 +58,7 @@
                 %form(action='/apply_for_dojo' method="POST")
                   %input.text_field(type='hidden'  name="applicant_study" value="game_with_coffeescript")
                   %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
-                  %p.error= @flash
+                  %p.error= @flash[game_with_coffeescript]
                   %input.btn.red(type='submit') Submit
             .team-box
               .photo-placer
@@ -84,7 +84,7 @@
                 %form(action='/apply_for_dojo' method="POST")
                   %input.text_field(type='hidden'  name="applicant_study" value="tdd_with_rails")
                   %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
-                  %p.error= @flash
+                  %p.error= @flash[tdd_with_rails]
                   %input.btn.red(type='submit') Submit
             .team-box
               .photo-placer
