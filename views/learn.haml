@@ -17,27 +17,6 @@
                     .text TBA
                   %li
                     %strong Where
-                    .text
-                    .text
-                %h3 Coding Dojo
-                .price
-                %p We are hosting medellin coding dojo. It helps you to polish your current skills and obtain new ones!
-                %p Leave your email and we will shoot you email about upcoming events
-                %form(action='/apply_for_dojo' method="POST")
-                  %input.text_field(type='hidden'  name="applicant_study" value="dojo")
-                  %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
-                  %p.error= @flash
-                  %input.btn.red(type='submit') Submit
-            .team-box
-              .photo-placer
-              .text
-                %ul.learn-info
-                  %li
-                    %strong When
-                    .text TBA
-                    .text TBA
-                  %li
-                    %strong Where
                     .text Ruta N
                     .text Medellin
                 %h3 Intro to Javascript

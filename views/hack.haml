@@ -11,7 +11,7 @@
               .about
                 %h3 List of applicants
                 - @applicants.each do |a|
-                  %p= a.email
+                  %p= "Section: #{a.study} - #{a.email}"
         #sidebar
           .projects
             %h4 Photos
