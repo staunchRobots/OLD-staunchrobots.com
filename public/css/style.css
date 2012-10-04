@@ -336,7 +336,7 @@ a.twitter-link{
 #content #team h3{
   color:#212122;
   font-size:26px;
-  line-height:19px;
+  line-height:25px;
   font-weight:normal;
   margin:4px 0 10px 0;
 }
@@ -421,7 +421,9 @@ a.twitter-link{
   margin:0 0 18px -27px;
   padding:12px 0;
 }
-#sidebar .projects{min-height:400px;}
+#sidebar .projects{
+  min-height:200px;
+}
 #sidebar p{
   font-size:14px;
   line-height:19px;
@@ -486,6 +488,18 @@ a.twitter-link{
   width:385px;
 }
 .team .about{
+  /*color: black;*/
+}
+.team-box .about {
+  color: black;
+}
+.team-box .about ul{
+  list-style: none;
+}
+.team-box .about li{
+  background:url(../images/ruby.png) no-repeat 0 3px #fff;
+  padding:0 10px 0px 38px;
+  color: black;
 }
 .team #content #team .about h3 {
   margin: 0 0 20px;
@@ -537,7 +551,7 @@ a.twitter-link{
 }
 .meta li a.github_ico{
   background:url(../images/github_ico.png) no-repeat 0 50%;
-  padding:0 0 0 41px;
+  padding: 6px 0 0 41px;
 }
 .meta li a.cv_ico{
   background:url(../images/cv_ico.png) no-repeat;
@@ -562,8 +576,18 @@ a.twitter-link{
 }
 .widgets li{
   background:url(../images/ruby.png) no-repeat 0 3px;
-  padding:0 10px 30px 38px;
-  font-size:18px;
+  padding:0 10px 0px 38px;
+  font-size:15px;
+  line-height:26px;
+}
+.widgets li a{
+  color: white;
+  /*float: right;*/
+}
+.widgets li.dhh{
+  background: none;
+  float: right;
+  font-size:15px;
   line-height:26px;
 }
 .photos_widget{
@@ -860,4 +884,8 @@ ul.learn-info li div.text {
 }
 .meta .right .commits_btn {
   float: none;
+}
+
+.team-box img.arrows {
+  padding: 3px 0 0 0 ;
 }

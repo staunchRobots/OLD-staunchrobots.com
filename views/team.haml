@@ -10,35 +10,19 @@
             .team-box
               .about
                 / %h3 What we do:
-                %h3 Top coders making quality code
-                %p
-                  We recruit inspired local talent, and put them through a grueling best practices training program, where we drill in best OOP techniques inspired by
-                  %a(href="http://objectsonrails.com/") http://objectsonrails.com/
-                  \. The result is a standardized way of doing things, that tend to be elegant, readable, and maintainable. We believe the key to quality code is a quality developer, and only hire people passionate about and enjoy learning.
-                %h3 We value communication and group dynamics
-                %p Developers are available and online during eastern standard time and work closely with our clients to get quick feedback.  Clients know what we are doing, and what we are going to do next.
+                %h3 Stop Competing With Silicon Valley For "Ninja Rockstars", listen to DHH and go Remote!
+                %ul
+                  %li We love pair programming and test driven development
+                  %li We contribute to open source projects regularly
+                  %li All we do is Rails
+                  %li Ramp up / down velocity by adding team members quickly with no long term obligation
+                  %li Work directly with fluent english speakers, no project management middleman, guys here are competent self managed profesionals
+                  %li Payments / Taxes are easy, make payments to American banks, to American Company, get a 1099
+                  %li Options to convert remote developers to your onsite location as an employee, some of our guys already have US visa's, and we have h1b processes in place for others.
 
-
-                %h3 Over 75% of revenue flows to developers.
-                %p We are very proud of our financial leanness. Over 75% of all company revenue goes to developers. We have virtually no sales, management, or administrative costs. Our programmers are expected to lead, and communicate proficiently and directly. We pay the most amount of money we can to developers in order to attract and value the highest level of talent. Less layers of management,  means less people in the telephone game, and better efficiency.
-
-                %h3 Medellin, Colombia ?!
-                %p We are headquartedred in paradise, Medellin Colombia. Why? Because the weather is perfect, the vista's are amazing, the price is cheap, the women are beautiful and we are on our client's time zone! I mean look at the view from our office:
-                %img(src="images/colombia.jpg")
-                %br
+                %p Check out Featured Open Source pull request and Technical details of team members below:
 
             .meet-team Meet The Team...
-            .team-box
-              .photo-placer
-                %img{:height => 192, :alt => "", :src => "images/todd2.jpeg"}/
-              .text
-                %h3 Todd Morrill
-                %p Todd is a cofounder of staunchrobots. He recruits talent globally, talking to developers from around the world and selling them on how they would be better off moving to Colombia.  Todd also moderates all communications both between team members and clients and drills in the message that communication is as important as coding skills.
-              %ul.meta
-                %li
-                  %a.twitter_ico{:href => "http://twitter.com/morrillt"} @morrillt
-                %li
-                  %a.github_ico{:href => "http://github.com/morrillt"} github
             .team-box
               .photo-placer
                 %img{:alt => "", :src => "images/voffka2.jpg", :height => '192', :width => '192'}/
@@ -48,13 +32,11 @@
               %ul.meta
                 %li
                   %a.twitter_ico{:href => "https://twitter.com/#!/mindwork"} @mindwork
+
                 %li
-                  %a.github_ico{:href => "https://github.com/shell"} GitHub
-                %li
-                  %a.cv_ico{:href => "/downloads/vladimir_penkin.pdf"} Technical Specs
+                  %a.cv_ico{:href => "/downloads/vladimir_penkin.pdf"} CV
                 %li.right
-                  %img(src="/images/downdown.png")
-                  %a.commits_btn{:href => ""} Commits
+                  %a.commits_btn.github_ico{:href => "https://github.com/shell"} Featured Commits
               %ul.commits
                 - @events["shell"].each do |event|
                   = partial :commits, locals: {event: event}
@@ -68,14 +50,12 @@
               %ul.meta
                 %li
                   %a.twitter_ico{:href => "https://twitter.com/#!/orendon"} @orendon
-                %li
-                  %a.github_ico{:href => "https://github.com/orendon"} GitHub
                 %li.right
-                  %img(src="/images/downdown.png")
-                  %a.commits_btn{:href => ""} Commits
+                  %a.commits_btn.github_ico{:href => "https://github.com/orendon"} Featured Commits
               %ul.commits
                 - @events["orendon"].each do |event|
                   = partial :commits, locals: {event: event}
+
             .team-box
               .photo-placer
                 %img{:height => 192, :alt => "", :src => "images/jeff.jpeg"}/
@@ -86,15 +66,13 @@
                 %li
                   %a.twitter_ico{:href => "https://twitter.com/JeffreyBiles"} @JeffreyBiles
                 %li
-                  %a.github_ico{:href => "https://github.com/jeffreybiles"} GitHub
-                %li
-                  %a.cv_ico{:href => "/downloads/jeffrey_biles.pdf"} Technical Specs
+                  %a.cv_ico{:href => "/downloads/jeffrey_biles.pdf"} CV
                 %li.right
-                  %img(src="/images/downdown.png")
-                  %a.commits_btn{:href => ""} Commits
+                  %a.commits_btn.github_ico{:href => "https://github.com/jeffreybiles"} Featured Commits
               %ul.commits
                 - @events["jeffreybiles"].each do |event|
                   = partial :commits, locals: {event: event}
+
             .team-box
               .photo-placer
                 %img{:height => 192, :width => 192, :alt => "", :src => "images/alex.jpeg"}/
@@ -105,15 +83,13 @@
                 / %li
                 /   %a.twitter_ico{:href => "https://twitter.com/?????"} @??????
                 %li
-                  %a.github_ico{:href => "https://github.com/balauru"} GitHub
-                %li
-                  %a.cv_ico{:href => "/downloads/calinoiu_alexandru_nicolae.pdf"} Technical Specs
+                  %a.cv_ico{:href => "/downloads/calinoiu_alexandru_nicolae.pdf"} CV
                 %li.right
-                  %img(src="/images/downdown.png")
-                  %a.commits_btn{:href => ""} Commits
+                  %a.commits_btn.github_ico{:href => "https://github.com/balauru"} Featured Commits
               %ul.commits
                 - @events["balauru"].each do |event|
                   = partial :commits, locals: {event: event}
+
             .team-box
               .photo-placer
                 %img{:width => 192, :alt => "", :src => "images/tim.jpeg"}/
@@ -122,15 +98,25 @@
                 %p Tim is is an ex silicon valley rogue agent. He has worked for some big name rails gigs, and enjoys working exclusively with staunchRobots because of the fleibility we offer. Tim has built a couple shopify apps, and has extensive experience in ecommerce.
               %ul.meta
                 %li
-                  %a.github_ico{:href => "https://github.com/timmatheson"} GitHub
-                %li
-                  %a.cv_ico{:href => "/downloads/tim_matheson.pdf"} Technical Specs
+                  %a.cv_ico{:href => "/downloads/tim_matheson.pdf"} CV
                 %li.right
-                  %img(src="/images/downdown.png")
-                  %a.commits_btn{:href => ""} Commits
+                  %a.github_ico{:href => "https://github.com/timmatheson"} Featured Commits
               %ul.commits
                 - @events["timmatheson"].each do |event|
                   = partial :commits, locals: {event: event}
+
+            .team-box
+              .photo-placer
+                %img{:height => 192, :alt => "", :src => "images/todd2.jpeg"}/
+              .text
+                %h3 Todd Morrill
+                %p Todd is a cofounder of staunchrobots. He worked previously as a project manager for a couple of consultancies and realized that good developers manage themselves. Todd main roal is taking caring of the day to day adminsitrative duties, and running marketing initiatives so that the developers can keep their heads down and focus on work.
+              %ul.meta
+                %li
+                  %a.twitter_ico{:href => "http://twitter.com/morrillt"} @morrillt
+                %li.right
+                  %a.github_ico{:href => "http://github.com/morrillt"} github
+
             .team-box
               .photo-placer
                 %img{:alt => "", :height => 192, :width => 192, :src => "images/could_be_you.jpg"}/
@@ -138,12 +124,13 @@
                 %h3 This could be you!
                 %p If you love programming, and are open to coming to Colombia, check out our Jobs page!
         #sidebar
-          / .projects
-          /   %h4 Community Projects
-          /   %ul.widgets
-          /     %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus.
-          /     %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus.
-          /     %li Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at pharetra enim. Nam in dolor et mi luctus cursus.
+          .projects
+            / %h4 Community Projects
+            %ul.widgets
+              %li
+                %a{:href => "http://37signals.com/svn/posts/3064-stop-whining-and-start-hiring-remote-workers"} If we were only trying to hire in Chicago, we’d never have the world-class team we have today...
+
+              %li.dhh - DHH, 37 signals
           .projects
             %h4 Photos
             %ul.photos_widget

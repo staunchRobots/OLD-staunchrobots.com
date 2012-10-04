@@ -11,7 +11,12 @@
       try{Typekit.load();}catch(e){}
       $(function() {
       $(".commits_btn").click(function(e) {
-      $(this).parents('.team-box').find('.commits').toggle('fast');
+      var commits = $(this).parents('.team-box').find('.commits');
+      if (commits.is(":visible")) {
+        $(this).parents('.team-box').find('.commits').slideUp('fast');
+      } else {
+        $(this).parents('.team-box').find('.commits').slideDown('fast');
+      }
       e.preventDefault();
       })
       $('.commits').hide();
