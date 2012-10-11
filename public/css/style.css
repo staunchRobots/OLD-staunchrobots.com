@@ -501,6 +501,12 @@ a.twitter-link{
   padding:0 10px 0px 38px;
   color: black;
 }
+.team-box .about.us li{
+  background:url(../images/ruby-black.png) no-repeat 0 3px #fff;
+  padding:0 10px 0px 38px;
+  color: black;
+  margin: 6px 0;
+}
 .team #content #team .about h3 {
   margin: 0 0 20px;
 }
@@ -888,4 +894,9 @@ ul.learn-info li div.text {
 
 .team-box img.arrows {
   padding: 3px 0 0 0 ;
+}
+
+.affordability {
+  background-color: #dfdfdf;
+  padding: 10px;
 }
