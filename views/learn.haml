@@ -112,6 +112,11 @@
                   \- Mentors will provide a short slideshow of a special topic, then guide whoever shows up into doing exercises in that topic. Programmers might also use this time to get feedback / help on a problem they are facing from work or class.
                 %p
                   %b Anyone is welcome to attend staunch saturdays! If you have a question email us at hello@stuanchrobots.com!
+                %form(action='/apply_for_dojo' method="POST")
+                  %input.text_field(type='hidden'  name="applicant_study" value="staunch_sat")
+                  %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
+                  %p.error= @flash['staunch_sat']
+                  %input.btn.red(type='submit' value='Sign Up For More Info')
         #sidebar
           .projects
             %h4 Photos

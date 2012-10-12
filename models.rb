@@ -2,7 +2,7 @@ class Applicant < ActiveRecord::Base
   validates_format_of :email,
     :with => /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i,
     :message => "Invalid email format"
-  validates :email, :uniqueness => true
+  validates :email, :uniqueness => {:scope => "study", :message => "You have already applied for that study!"}
 end
 
 # class Product < ActiveRecord::Base
