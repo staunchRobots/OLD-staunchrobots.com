@@ -377,6 +377,10 @@ a.twitter-link{
 .team-box img {
   border: 1px solid #000;
 }
+.team-box img.facebook_ev {
+  border: none;
+}
+
 
 #sidebar{
   width:266px;
@@ -806,6 +810,11 @@ address.primary a {
 .btn.red {
   color: white;
   background-color: #AE1F23;
+}
+
+.btn.blue {
+  color: white;
+  background-color: #617EA1;
 }
 
 .error {
