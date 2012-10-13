@@ -816,6 +816,9 @@ address.primary a {
   color: white;
   background-color: #617EA1;
 }
+a.btn.blue {
+  padding: 1px 10px;
+}
 
 .error {
   color: red;
