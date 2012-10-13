@@ -57,7 +57,6 @@
                   %a(href="scholarship@staunchrobots.com")scholarship@staunchrobots.com
                   %i with a summary of your circumstances.
                 %form(action='/apply_for_dojo' method="POST")
-                  %img.facebook_ev.right(src="images/fb_event_button.png")
                   %input.text_field(type='hidden'  name="applicant_study" value="game_with_coffeescript")
                   %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
                   %p.error= @flash['game_with_coffeescript']
@@ -85,7 +84,6 @@
                   %a(href="scholarship@staunchrobots.com")scholarship@staunchrobots.com
                   %i with a summary of your circumstances.
                 %form(action='/apply_for_dojo' method="POST")
-                  %img.facebook_ev.right(src="images/fb_event_button.png")
                   %input.text_field(type='hidden'  name="applicant_study" value="tdd_with_rails")
                   %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
                   %p.error= @flash['tdd_with_rails']
@@ -118,7 +116,6 @@
                 %p
                   %b Anyone is welcome to attend staunch saturdays! If you have a question email us at hello@stuanchrobots.com!
                 %form(action='/apply_for_dojo' method="POST")
-                  %img.facebook_ev.right(src="images/fb_event_button.png")
                   %input.text_field(type='hidden'  name="applicant_study" value="staunch_sat")
                   %input.text_field(type='text' placeholder="email" name="applicant_email" value="#{@email}")
                   %p.error= @flash['staunch_sat']
