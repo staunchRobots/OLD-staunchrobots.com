@@ -11,8 +11,7 @@ gem "github_api"
 gem "awesome_print"
 gem "sinatra-partial"
 
-gem 'sqlite3-ruby'
-gem 'mysql2', '< 0.3'
+gem 'pg'
 gem 'i18n', '0.5.0'
 
 group :development, :test do

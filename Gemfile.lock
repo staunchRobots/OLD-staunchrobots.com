@@ -49,7 +49,6 @@ GEM
       backports
     multi_json (1.3.6)
     multipart-post (1.1.5)
-    mysql2 (0.2.13)
     nokogiri (1.5.5)
     oauth2 (0.8.0)
       faraday (~> 0.8)
@@ -57,6 +56,7 @@ GEM
       jwt (~> 0.1.4)
       multi_json (~> 1.0)
       rack (~> 1.2)
+    pg (0.14.1)
     rack (1.3.2)
     rack-test (0.6.1)
       rack (>= 1.0)
@@ -99,9 +99,6 @@ GEM
     sinatra-sugar (0.5.1)
       monkey-lib (~> 0.5.0)
       sinatra (~> 1.0)
-    sqlite3 (1.3.4)
-    sqlite3-ruby (1.3.3)
-      sqlite3 (>= 1.3.3)
     tilt (1.3.3)
     tzinfo (0.3.29)
 
@@ -116,7 +113,7 @@ DEPENDENCIES
   github_api
   haml
   i18n (= 0.5.0)
-  mysql2 (< 0.3)
+  pg
   rack-test
   rake
   rspec
@@ -128,4 +125,3 @@ DEPENDENCIES
   sinatra-activerecord!
   sinatra-partial
   sinatra-reloader
-  sqlite3-ruby
