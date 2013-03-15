@@ -1,14 +1,24 @@
-development:
-  adapter: sqlite3
+common: &common
+  adapter: postgresql
   encoding: utf8
-  database: db/development.db
+  username: rails
+  password: rails
+
+heroku: &heroku
+  adapter: postgresql
+  encoding: utf8
+  host: ec2-54-243-234-148.compute-1.amazonaws.com
+  database: d2vb9cg02d0lie
+  username: elfwzfpcurbfvi
+  password: sKaOYf8sZPTnxlN_To-fY3bwY9
+  port: 5432
+
+development:
+  <<: *heroku
 
 test:
-  adapter: sqlite3
-  encoding: utf8
-  database: db/test.db
+  database: staunch_test
+  <<: *common
 
 production:
-  adapter: sqlite3
-  encoding: utf8
-  database: db/production.db
+  <<: *heroku
