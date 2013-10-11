@@ -38,7 +38,6 @@ ActiveRecord::Base.logger.level = Logger::DEBUG
   end
 
   get "/team" do
-    @events = HubEvents.team_events
     haml :team
   end
 
