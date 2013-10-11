@@ -80,3 +80,14 @@
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+
+        :javascript
+            var t = document.createElement('script');
+            t.type = 'text/javascript';
+            t.async = true;
+            var u = document.location.href;
+            var ti = document.title;
+            var i = "?title=" + encodeURIComponent(ti) + "&url=" + encodeURIComponent(u);
+            t.src = 'https://go.toutapp.com/site/bsfck2fh90' + i;
+            var st = document.getElementsByTagName('script')[0];
+            st.parentNode.insertBefore(t, st);
