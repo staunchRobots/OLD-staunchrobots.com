@@ -16,7 +16,6 @@ gem 'i18n', '0.5.0'
 
 group :development, :test do
   gem 'ruby-debug19'
-  gem 'capistrano'
   gem 'rack-test'
   gem 'rspec'
   gem 'rspec-core'
